@@ -9,7 +9,7 @@ There is quite an eclectic mix on offer here, although there is a definite leani
 
 ![](Xania-Books-Photo-Collage-300x240.png)
 
-To look at all books on offer just click the Book Shop link at the top of the page.
+To look at all books on offer just click the [Book Shop](bookshop.html) link at the top of the page.
 
 Stimulate Your Brain
 
