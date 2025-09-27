@@ -1,0 +1,95 @@
+#cookie-bar {
+line-height: 24px;
+color: #eeeeee;
+text-align: center;
+padding: 3px 0PX;
+z-index: 1000;
+background: rgba(0, 0, 0, 0.65);
+}
+#cookie-bar.fixed {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: 100000;
+}
+#cookie-bar p {
+margin: 0;
+padding: 0;
+font-size: 12px;
+}
+#cookie-bar a {color:#ffffff; display:inline-block; border-radius:3px; text-decoration:none; padding:0 6px; margin-left:8px;}
+#cookie-bar .cb-enable {
+display: inline-block;
+color: #fff;
+text-decoration: none;
+background: #7DAF3B;
+padding: 0PX 15PX;
+border-radius: 3px;
+box-shadow: 0 0 2px rgba(0,0,0,0.25);
+text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+-o-transition: background 0.5s ease-in;
+-webkit-transition: background 0.25s ease-in;
+-moz-transition: background 0.25s ease-in;
+font-size: 10PX;
+text-transform: capitalize;
+font-weight: bold; 
+}
+#cookie-bar .cb-enable:hover ,#cookie-bar .cb-disable:hover ,#cookie-bar :hover{
+background: #000;
+-o-transition: background 0.5s ease-in;
+-webkit-transition: background 0.25s ease-in;
+-moz-transition: background 0.25s ease-in;
+}
+#cookie-bar .cb-policy:hover{
+background: none !important;
+text-decoration: underline;
+color:#7DAF3B;
+}
+#cookie-bar .cb-disable {
+background:#990000;
+padding: 0PX 15PX;
+border-radius: 3px;
+box-shadow: 0 0 2px rgba(0,0,0,0.25);
+text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+-o-transition: background 0.5s ease-in;
+-webkit-transition: background 0.25s ease-in;
+-moz-transition: background 0.25s ease-in;
+font-size: 10PX;
+text-transform: capitalize;
+font-weight: bold;
+}
+#cookie-bar .cb-policy {
+/*background:#0033bb;*/
+padding: 0PX 15PX;
+border-radius: 3px;
+box-shadow: 0 0 2px rgba(0,0,0,0.25);
+text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+-o-transition: background 0.5s ease-in;
+-webkit-transition: background 0.25s ease-in;
+-moz-transition: background 0.25s ease-in;
+font-size: 10PX;
+text-transform: capitalize;
+font-weight: bold;
+text-decoration: underline;
+}
+.wpcb_delay_cookie_bar ,.wpcb_accept_popup_section{
+margin: 0px 5%;
+float: left;
+text-align: center;
+position: fixed;
+margin-top: -11px;
+background-color: #000;
+border-radius: 15px;
+color: #fff;
+padding: 10px 20px;
+width: 50%;
+z-index: 100000;
+border: 1px solid #CCC;
+box-shadow: 0px 1px 17px -4px #000;
+top: 40%;
+left: 25%;
+margin-left: 0px;
+display:none;
+}
+
