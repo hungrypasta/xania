@@ -1,0 +1,44 @@
+jQuery(document).ready(function($){
+/********************pop-up-js*******************/
+$("#wpcb_accept_content").click(function(e){
+				e.preventDefault();
+				var popupid=$(this).attr("data");
+				$(".reveal-modal-bg").css("background","");
+				var wpcb_ajaxurl=$("#wpcb_ajaxurl").val();
+				 var data={}; 
+				 data.action="wpcb_set_popup_cookies";
+				 data.pagename=popupid;
+				 jQuery.post(wpcb_ajaxurl,data,function(response){
+				 //$("#modal").css("visibility","hidden"); 
+				 $("#modal").fadeOut('slow'); 
+				  });
+				  /****************************/
+		$.getJSON("http://ip-api.com/json/?callback=?", function(data){
+		    $("#wpcb_cokkie_accpops_bar").html('Your IP Address ( '+data.query+' ) has been noted on our database.'); 
+			$("#wpcb_cokkie_accpops_bar").fadeIn();
+			$("#wpcb_cokkie_accpops_bar").delay(3000).fadeOut(); 
+					var datalog={};
+					datalog.action="wpcb_popup_iplogdb";
+					datalog.hostip=data.query;
+					datalog.pageid=popupid; 
+					      jQuery.post(wpcb_ajaxurl, datalog, function(response){
+						  //alert(response);    
+						  });
+                    });
+				/**************************/
+				}); 
+
+                                $("#wpcb_popup_decline").hide(); 
+$("#wpcb_decline_content").click(function(e){
+e.preventDefault();
+//alert('hii');
+$("#wpcb_popup_decline").fadeIn();
+});
+$('#wpcb_fpopupclose').click(function(){$(this).parent().hide();});
+			/*	$("#wpcb_decline_content").click(function(e){
+				e.preventDefault();
+alert('hii');
+				var notfound=$('#wpcb_pagenotfnd').val();
+				window.location.assign(notfound);
+				});*/
+/************************************************/});
