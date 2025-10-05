@@ -29,7 +29,7 @@ button {
 </head>
 
 <body>
-<navbar class="header">
+<nav class="header">
 		<button onclick="loadPage('pages/welcome.html')">Home</button>
 		<button onclick="loadPage('pages/about.html')">About</button>
 		<button onclick="loadPage('pages/bookshop.html')">Bookshop</button>
@@ -39,7 +39,7 @@ button {
 		<button onclick="loadPage('pages/free-books.html')">Free books</button>
 		<button onclick="loadPage('pages/privacy-policy.html')">Privacy policy</button>
 		<button onclick="loadPage('pages/contact.html')">Contact</button>
-</navbar>
+</nav>
 
 <header>
 	<a href="index.html" title="Home" rel="home"><h2>Xania Books</h3></a>
@@ -59,6 +59,7 @@ function loadPage(page) {
           console.error("Error:", error);
         });
     }
+	
 loadPage("pages/welcome.html");
 </script>
 

@@ -5,6 +5,14 @@
 	font-family: 'Helvetica', sans-serif;
 }
 
+nav{
+	position: fixed;
+	background: #1b1b1b;
+	width: 100%;
+	padding: 10px 0;
+	z-index: 12;
+}
+
 .header {
 	position: fixed;
 	background: #1b1b1b;
